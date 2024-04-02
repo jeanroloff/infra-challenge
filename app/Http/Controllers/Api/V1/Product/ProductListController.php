@@ -15,7 +15,7 @@ class ProductListController extends Controller
     public function __invoke(ProductListRequest $request)
     {
         $products = Product::query()
-            ->paginate($request->query('perPage', 100));
+            ->paginate($request->validated('perPage', 100));
 
         return ProductListResource::collection($products);
     }

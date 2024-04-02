@@ -1,10 +1,10 @@
 ## About project infra-challenge
 
-This is a api example project for a technical test the application infrastructure.
+This is an example api project for the technical test to the application infrastructure team.
 
 ### Setup
 
-1. After clone project, run install dependencies
+1. After clonning the project, install dependencies
 ```shell
 composer install
 ```

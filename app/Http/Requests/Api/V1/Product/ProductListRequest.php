@@ -19,7 +19,7 @@ class ProductListRequest extends FormRequest
                 'nullable',
                 'int'
             ],
-            'limit' => [
+            'perPage' => [
                 'nullable',
                 'int',
                 'min:50',
