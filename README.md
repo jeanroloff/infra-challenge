@@ -4,12 +4,16 @@ This is an example api project for the technical test to the application infrast
 
 ### Setup
 
-1. After clonning the project, install dependencies
+1. The project requires:
+```shell
+PHP 8.3
+MySQL 8.0.36
+```
+2. After clonning the project, install dependencies
 ```shell
 composer install
 ```
-
-2. The projetct requires MySQL installed, configure the credentials in .env file
+3. Configure the credentials in .env file
 ```shell
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -18,15 +22,11 @@ DB_DATABASE=
 DB_USERNAME=
 DB_PASSWORD=
 ```
-
-3. Run migrations with seeders
+4. Run migrations with seeders
 ```shell
 php artisan migrate --seed
 ```
-
-4. Access the example endpoint
+5. Access the example endpoint
 ```shell
 curl http://127.0.0.1:8000/api/v1/products
 ```
-
-
